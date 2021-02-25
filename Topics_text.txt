@@ -1,0 +1,844 @@
+RUN WITH VALUES: min_df of 0.001, max_df of 0.4, and num_topics of 5
+------------------------------------
+
+Topic  0
+nice, san, breakfast, barcelona, clean, juan, excellent, pool, ramblas, hong, walk, kong, area, friendly, helpful
+
+Topic  1
+tokyo, wharf, francisco, waikiki, san, cable, argonaut, parking, car, fisherman, union, shinjuku, nice, clean, sf
+
+Topic  2
+breakfast, helpful, clean, excellent, friendly, paris, walk, florence, station, nice, lovely, recommend, city, comfortable, perfect
+
+Topic  3
+beach, resort, food, pool, time, people, day, beautiful, water, service, vacation, nice, like, went, got
+
+Topic  4
+nice, night, service, breakfast, bed, small, floor, bathroom, clean, place, like, desk, time, view, hotels
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.4, and num_topics of 5
+------------------------------------
+
+Topic  0
+night, desk, told, service, bed, like, nice, check, time, got, small, day, floor, bathroom, booked
+
+Topic  1
+resort, beach, food, pool, time, people, day, beautiful, water, vacation, nice, service, like, went, got
+
+Topic  2
+nice, service, view, comfortable, breakfast, free, floor, night, clean, excellent, area, small, bed, place, friendly
+
+Topic  3
+san, juan, service, wonderful, clean, nice, place, helpful, friendly, excellent, best, perfect, loved, waikiki, new
+
+Topic  4
+breakfast, clean, excellent, helpful, walk, station, friendly, nice, city, small, metro, paris, recommend, comfortable, lovely
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.4, and num_topics of 5
+------------------------------------
+
+Topic  0
+service, place, hotels, new, like, best, night, time, experience, view, better, really, desk, bad, nice
+
+Topic  1
+nice, small, bed, bathroom, breakfast, clean, night, floor, shower, street, comfortable, area, free, coffee, little
+
+Topic  2
+beach, resort, food, pool, time, people, day, beautiful, water, service, nice, like, went, got, really
+
+Topic  3
+excellent, helpful, friendly, clean, breakfast, lovely, wonderful, perfect, recommend, fantastic, comfortable, city, definitely, loved, nights
+
+Topic  4
+station, walk, airport, minutes, breakfast, night, 10, check, clean, booked, nice, quite, city, arrived, service
+
+
+RUN WITH VALUES: min_df of 0.001, max_df of 0.3, and num_topics of 5
+------------------------------------
+
+Topic  0
+helpful, friendly, excellent, walk, small, comfortable, city, bathroom, street, area, place, recommend, really, station, nights
+
+Topic  1
+florence, wonderful, paris, perfect, europa, casci, helpful, italy, family, lovely, friendly, trip, hosts, venice, loved
+
+Topic  2
+resort, beach, food, pool, people, beautiful, vacation, cana, punta, day, water, went, best, fun, like
+
+Topic  3
+harbour, excellent, hong, kong, singapore, view, sydney, fantastic, tokyo, helpful, best, value, views, friendly, hk
+
+Topic  4
+desk, like, day, pool, place, beach, told, got, check, bed, really, small, food, booked, area
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.3, and num_topics of 5
+------------------------------------
+
+Topic  0
+wonderful, helpful, friendly, comfortable, excellent, perfect, place, loved, recommend, new, best, san, florence, city, small
+
+Topic  1
+walk, station, excellent, city, helpful, metro, value, friendly, train, airport, close, located, comfortable, area, bus
+
+Topic  2
+beach, resort, food, pool, people, day, beautiful, water, vacation, like, went, got, place, really, best
+
+Topic  3
+desk, bed, like, small, floor, check, place, bathroom, day, parking, got, told, price, booked, hotels
+
+Topic  4
+barcelona, excellent, lovely, helpful, friendly, ramblas, small, bathroom, coffee, amsterdam, really, walk, city, bar, nights
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.3, and num_topics of 5
+------------------------------------
+
+Topic  0
+walk, station, street, excellent, located, minutes, close, helpful, city, small, friendly, area, quiet, free, airport
+
+Topic  1
+resort, beach, food, people, day, went, got, like, pool, beautiful, place, water, make, trip, really
+
+Topic  2
+bed, small, bathroom, desk, floor, hotels, like, price, booked, really, check, shower, got, place, view
+
+Topic  3
+beach, pool, food, bar, area, restaurant, beautiful, restaurants, resort, day, place, water, view, best, like
+
+Topic  4
+helpful, wonderful, friendly, excellent, perfect, lovely, fantastic, loved, comfortable, recommend, city, place, definitely, best, nights
+
+
+RUN WITH VALUES: min_df of 0.001, max_df of 0.2, and num_topics of 5
+------------------------------------
+
+Topic  0
+orleans, quarter, waikiki, french, bourbon, new, aqua, charles, honolulu, armes, st, palms, gras, hawaiian, moana
+
+Topic  1
+desk, told, bed, check, booked, price, bad, floor, hotels, asked, star, parking, better, door, said
+
+Topic  2
+florence, station, amsterdam, train, paris, lovely, walking, wonderful, comfortable, perfect, nights, city, close, distance, value
+
+Topic  3
+beach, resort, beautiful, vacation, water, went, cana, punta, restaurants, trip, bar, buffet, kids, fun, drinks
+
+Topic  4
+comfortable, city, view, street, free, floor, bed, nights, fantastic, modern, large, value, hotels, restaurant, quiet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.2, and num_topics of 5
+------------------------------------
+
+Topic  0
+station, city, florence, lovely, paris, metro, barcelona, comfortable, nights, quiet, amsterdam, value, modern, close, perfect
+
+Topic  1
+told, desk, manager, check, said, asked, arrived, called, booked, went, checked, reservation, card, customer, phone
+
+Topic  2
+bed, floor, price, shower, noise, desk, ok, star, street, better, door, bit, internet, hotels, view
+
+Topic  3
+beach, resort, beautiful, water, vacation, went, cana, punta, restaurants, bar, trip, buffet, kids, fun, drinks
+
+Topic  4
+comfortable, view, new, wonderful, city, hotels, loved, square, free, san, perfect, floor, fantastic, street, definitely
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.2, and num_topics of 5
+------------------------------------
+
+Topic  0
+price, hotels, booked, view, reviews, worth, nights, bit, better, staying, money, city, quite, bed, definitely
+
+Topic  1
+desk, check, airport, minutes, arrived, use, 10, took, money, experience, bad, morning, hotels, old, need
+
+Topic  2
+beach, resort, beautiful, water, went, trip, week, restaurants, make, buffet, say, restaurant, bar, days, want
+
+Topic  3
+perfect, city, wonderful, located, station, quiet, lovely, street, walking, comfortable, close, restaurants, nights, away, definitely
+
+Topic  4
+fantastic, floor, bed, new, comfortable, loved, bar, view, shower, free, lobby, beds, coffee, large, door
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.001, max_df of 0.4, and num_topics of 7
+------------------------------------
+
+Topic  0
+beach, juan, pool, bali, san, resort, nice, beautiful, puerto, food, place, villa, old, service, rico
+
+Topic  1
+tokyo, shinjuku, ginza, japan, jr, japanese, narita, damrak, nathan, prince, midst, kyoto, ongoing, yen, barri
+
+Topic  2
+wonderful, casablanca, perfect, fantastic, sants, excellent, hong, kong, birthday, loved, helpful, service, paris, lovely, camper
+
+Topic  3
+waikiki, aqua, honolulu, oahu, hawaiian, luna, simone, moana, palms, beach, outrigger, hawaii, pearl, lanai, ala
+
+Topic  4
+nice, breakfast, night, service, clean, small, bed, floor, bathroom, comfortable, place, excellent, view, friendly, really
+
+Topic  5
+resort, beach, food, time, pool, people, day, service, like, got, water, went, beautiful, nice, vacation
+
+Topic  6
+clean, helpful, breakfast, excellent, friendly, florence, walk, station, nice, paris, metro, recommend, city, lovely, value
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.4, and num_topics of 7
+------------------------------------
+
+Topic  0
+nice, parking, price, small, night, clean, place, bed, star, street, like, bathroom, noise, ok, better
+
+Topic  1
+resort, beach, food, pool, time, people, day, beautiful, vacation, water, like, nice, service, cana, punta
+
+Topic  2
+nice, service, view, breakfast, comfortable, floor, bed, excellent, bathroom, night, small, free, area, square, new
+
+Topic  3
+helpful, wonderful, friendly, clean, excellent, perfect, comfortable, loved, place, service, recommend, nice, florence, breakfast, new
+
+Topic  4
+breakfast, clean, walk, station, excellent, helpful, nice, city, friendly, metro, small, barcelona, street, recommend, quiet
+
+Topic  5
+desk, told, night, service, check, asked, day, booked, time, said, got, arrived, manager, called, like
+
+Topic  6
+beach, pool, juan, san, bali, service, nice, view, waikiki, food, area, ocean, beautiful, resort, spa
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.4, and num_topics of 7
+------------------------------------
+
+Topic  0
+hotels, place, new, service, like, best, old, experience, better, time, nice, really, bad, night, make
+
+Topic  1
+nice, small, street, bathroom, comfortable, breakfast, bed, clean, shower, large, coffee, floor, beds, area, quiet
+
+Topic  2
+beach, resort, food, pool, time, people, day, beautiful, water, nice, service, like, went, got, really
+
+Topic  3
+excellent, helpful, friendly, wonderful, clean, fantastic, lovely, breakfast, recommend, loved, definitely, comfortable, city, service, perfect
+
+Topic  4
+station, walk, breakfast, minutes, airport, clean, nice, city, 10, quite, located, price, excellent, area, night
+
+Topic  5
+view, service, check, perfect, nice, desk, floor, night, breakfast, pool, time, day, area, bar, lobby
+
+Topic  6
+night, booked, got, bed, reviews, floor, really, arrived, breakfast, day, money, time, nice, small, clean
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.001, max_df of 0.3, and num_topics of 7
+------------------------------------
+
+Topic  0
+small, bathroom, walk, friendly, excellent, comfortable, helpful, street, bed, area, city, floor, really, place, free
+
+Topic  1
+watertown, doubletree, argonaut, turnaround, centres, university, excelent, hampton, rm, exec, circumstances, nautical, def, honors, gracias
+
+Topic  2
+chesterfield, mayfair, beautifull, buckingham, pantheon, may, burning, ranking, conceirge, des, quarters, et, latin, id, slides
+
+Topic  3
+tokyo, orleans, shinjuku, quarter, ginza, japan, french, jr, bourbon, new, japanese, charles, armes, gras, narita
+
+Topic  4
+told, desk, dirty, manager, booked, rude, asked, said, worst, bad, smoking, called, checked, star, reservation
+
+Topic  5
+beach, resort, food, pool, people, day, beautiful, like, place, water, really, went, got, best, vacation
+
+Topic  6
+excellent, helpful, florence, friendly, recommend, wonderful, perfect, comfortable, city, walk, station, fantastic, nights, lovely, value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.3, and num_topics of 7
+------------------------------------
+
+Topic  0
+helpful, florence, friendly, wonderful, comfortable, san, paris, perfect, excellent, place, recommend, small, loved, new, city
+
+Topic  1
+walk, station, excellent, city, metro, helpful, friendly, modern, value, bus, minutes, area, comfortable, barcelona, train
+
+Topic  2
+resort, beach, food, pool, people, day, beautiful, vacation, water, like, went, got, place, cana, really
+
+Topic  3
+parking, free, street, view, floor, seattle, small, place, bed, area, downtown, car, comfortable, waikiki, price
+
+Topic  4
+ramblas, amsterdam, coffee, eggs, fruit, excellent, friendly, tea, barcelona, helpful, las, lovely, fresh, cereals, small
+
+Topic  5
+desk, told, like, bed, small, booked, bathroom, got, check, day, place, asked, star, floor, bad
+
+Topic  6
+fantastic, excellent, best, view, wonderful, pool, bali, beautiful, lovely, amazing, friendly, perfect, really, loved, experience
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.3, and num_topics of 7
+------------------------------------
+
+Topic  0
+walk, station, located, street, minutes, excellent, city, helpful, close, friendly, 10, away, quiet, walking, area
+
+Topic  1
+desk, check, booked, arrived, got, day, airport, morning, went, took, like, problem, way, place, minutes
+
+Topic  2
+price, hotels, experience, bad, better, beds, small, comfortable, place, really, best, quite, bit, like, bed
+
+Topic  3
+view, new, money, floor, worth, bar, like, place, lobby, area, restaurant, city, hotels, really, little
+
+Topic  4
+wonderful, perfect, helpful, friendly, lovely, excellent, fantastic, loved, recommend, comfortable, definitely, city, place, nights, best
+
+Topic  5
+bathroom, shower, small, bed, coffee, floor, large, free, comfortable, area, water, door, friendly, excellent, street
+
+Topic  6
+beach, resort, food, pool, people, day, beautiful, water, like, went, got, really, place, restaurants, best
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.001, max_df of 0.2, and num_topics of 7
+------------------------------------
+
+Topic  0
+orleans, quarter, bourbon, french, juan, milano, nola, armes, gras, mardi, new, san, harrah, iberville, courtyard
+
+Topic  1
+seattle, boston, downtown, parking, business, comfortable, price, shuttle, center, new, singapore, pike, market, needle, hotels
+
+Topic  2
+station, metro, amsterdam, barcelona, paris, city, value, train, ramblas, quiet, close, euros, lovely, nights, walking
+
+Topic  3
+resort, beach, beautiful, vacation, cana, punta, fun, went, water, buffet, drinks, trip, loved, restaurants, bar
+
+Topic  4
+comfortable, city, view, floor, bed, street, free, nights, large, hotels, fantastic, price, modern, restaurant, quiet
+
+Topic  5
+florence, wonderful, perfect, loved, duomo, italy, lovely, fantastic, beautiful, highly, family, comfortable, ponte, venice, trip
+
+Topic  6
+beach, desk, told, check, bad, resort, water, bed, better, went, said, old, booked, asked, star
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.2, and num_topics of 7
+------------------------------------
+
+Topic  0
+florence, paris, lovely, wonderful, perfect, comfortable, nights, quiet, loved, duomo, fantastic, definitely, highly, trip, large
+
+Topic  1
+told, desk, manager, said, called, asked, card, check, reservation, credit, phone, arrived, rude, went, customer
+
+Topic  2
+bed, floor, shower, desk, price, noise, door, hotels, star, better, check, ok, booked, view, bit
+
+Topic  3
+beach, resort, beautiful, water, vacation, went, cana, punta, restaurants, bar, buffet, kids, trip, fun, drinks
+
+Topic  4
+new, york, comfortable, view, nyc, street, bed, square, parking, floor, times, suite, orleans, wonderful, hotels
+
+Topic  5
+fantastic, wonderful, bali, perfect, beautiful, loved, view, amazing, lovely, experience, hotels, honeymoon, highly, restaurant, comfortable
+
+Topic  6
+station, city, metro, value, bus, street, close, comfortable, located, walking, minutes, modern, nights, airport, right
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.2, and num_topics of 7
+------------------------------------
+
+Topic  0
+price, view, booked, worth, hotels, sure, reviews, bed, nights, make, floor, coffee, money, better, comfortable
+
+Topic  1
+desk, check, airport, bad, money, arrived, hotels, need, better, use, took, days, way, morning, experience
+
+Topic  2
+beach, resort, beautiful, water, went, week, restaurants, buffet, trip, bar, make, say, restaurant, want, days
+
+Topic  3
+perfect, wonderful, comfortable, walking, experience, nights, street, old, quiet, definitely, large, restaurants, trip, city, restaurant
+
+Topic  4
+bed, floor, shower, door, lobby, free, bar, comfortable, water, beds, desk, coffee, right, street, large
+
+Topic  5
+station, located, lovely, close, minutes, 10, city, quiet, away, street, comfortable, free, walking, nights, restaurants
+
+Topic  6
+fantastic, loved, new, city, hotels, bit, comfortable, lovely, times, trip, quite, staying, wonderful, away, definitely
+
+
+RUN WITH VALUES: min_df of 0.001, max_df of 0.4, and num_topics of 10
+------------------------------------
+
+Topic  0
+beach, resort, food, pool, time, people, day, beautiful, nice, service, water, like, vacation, place, went
+
+Topic  1
+seattle, adagio, aqua, lake, colon, downtown, needle, watertown, palms, cloud, pike, silver, university, monorail, neighbor
+
+Topic  2
+muse, excelent, dc, alone, hearty, circus, 22nd, camper, performed, glitches, hitting, 2003, consistent, washington, cordial
+
+Topic  3
+waikiki, outrigger, hawaiian, oahu, honolulu, hawaii, moana, kuhio, lanai, beach, renew, parc, ocean, duke, ala
+
+Topic  4
+nice, night, service, breakfast, small, clean, bed, floor, place, bathroom, like, desk, view, time, area
+
+Topic  5
+orleans, quarter, french, bourbon, new, charles, armes, st, gras, mardi, chesterfield, harrah, streetcar, jackson, homewood
+
+Topic  6
+florence, clean, helpful, station, nice, breakfast, excellent, friendly, train, walk, value, duomo, walking, nights, close
+
+Topic  7
+rex, arizona, 34, alongside, et, laura, whats, outgoing, temporarily, yrs, vegetation, burning, temps, phoenix, hors
+
+Topic  8
+breakfast, excellent, helpful, clean, friendly, paris, walk, nice, city, lovely, recommend, comfortable, fantastic, perfect, barcelona
+
+Topic  9
+hong, kong, wharf, argonaut, kowloon, cable, fisherman, hk, harbour, mtr, francisco, san, gate, alcatraz, ferry
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.4, and num_topics of 10
+------------------------------------
+
+Topic  0
+nice, small, night, price, bed, bathroom, clean, star, place, like, floor, really, better, hotels, noise
+
+Topic  1
+resort, beach, food, pool, time, people, day, beautiful, water, vacation, nice, like, service, went, really
+
+Topic  2
+nice, parking, free, breakfast, street, clean, comfortable, small, night, car, place, area, bed, square, bathroom
+
+Topic  3
+villa, bali, cant, clean, perfect, excellent, fault, worth, exceptional, highly, nice, recommend, nights, romantic, friendly
+
+Topic  4
+breakfast, walk, clean, station, excellent, helpful, nice, city, friendly, metro, small, barcelona, street, night, quiet
+
+Topic  5
+desk, told, service, night, check, asked, day, time, said, got, manager, booked, arrived, called, like
+
+Topic  6
+juan, san, beach, waikiki, puerto, rico, old, ocean, pool, el, nice, cruise, view, marriott, area
+
+Topic  7
+wonderful, helpful, friendly, perfect, excellent, service, loved, clean, comfortable, florence, best, new, place, recommend, breakfast
+
+Topic  8
+harbour, service, view, excellent, hong, kong, sydney, fantastic, nice, pool, singapore, views, business, breakfast, club
+
+Topic  9
+dollar, happy, thought, value, place, points, wow, earlier, shade, tipping, mistake, breads, spotlessly, cafes, thinking
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.4, and num_topics of 10
+------------------------------------
+
+Topic  0
+place, best, new, hotels, service, like, time, experience, make, better, wonderful, want, nice, staying, really
+
+Topic  1
+nice, coffee, free, breakfast, street, small, lobby, floor, clean, area, bathroom, night, comfortable, bed, little
+
+Topic  2
+beach, resort, food, pool, time, people, day, beautiful, water, nice, service, like, got, went, really
+
+Topic  3
+excellent, fantastic, service, airport, breakfast, best, helpful, friendly, recommend, restaurant, clean, comfortable, food, view, nights
+
+Topic  4
+quite, bit, price, nice, small, breakfast, clean, overall, really, area, bathroom, service, night, hotels, nights
+
+Topic  5
+check, desk, service, arrived, night, day, time, took, morning, nice, breakfast, view, went, floor, booked
+
+Topic  6
+bed, booked, night, reviews, money, got, bathroom, small, floor, beds, really, like, clean, bad, nice
+
+Topic  7
+city, quiet, walking, clean, comfortable, station, breakfast, street, walk, located, helpful, excellent, friendly, restaurants, nice
+
+Topic  8
+walk, minutes, 10, door, station, shower, breakfast, night, nice, area, bathroom, clean, old, airport, floor
+
+Topic  9
+lovely, helpful, friendly, loved, clean, wonderful, breakfast, recommend, definitely, perfect, nice, close, comfortable, nights, excellent
+
+
+RUN WITH VALUES: min_df of 0.001, max_df of 0.3, and num_topics of 10
+------------------------------------
+
+Topic  0
+walk, station, excellent, helpful, small, metro, friendly, city, barcelona, street, bathroom, value, modern, amsterdam, area
+
+Topic  1
+argonaut, mate, mario, excelent, gare, mayfair, nord, cdg, laura, nautical, du, madrid, dc, rm, turnaround
+
+Topic  2
+cow, hollow, layover, 64, un, annex, clocks, boutiques, skip, des, roaches, glitches, performed, consistent, hesitant
+
+Topic  3
+tokyo, orleans, quarter, shinjuku, french, ginza, bourbon, japan, new, charles, gras, jr, st, mardi, narita
+
+Topic  4
+buena, ramada, pig, redone, 149, iv, 109, sold, faded, grande, outgoing, temporarily, yrs, tax, motor
+
+Topic  5
+beach, pool, food, day, like, really, place, resort, restaurant, bar, area, best, view, little, people
+
+Topic  6
+helpful, excellent, florence, friendly, comfortable, wonderful, perfect, recommend, place, loved, lovely, city, fantastic, definitely, nights
+
+Topic  7
+casablanca, 41, antiche, rick, york, stink, nadia, facilites, affinia, friendlier, robert, tranquil, tops, westin, figure
+
+Topic  8
+desk, told, bed, place, got, parking, booked, like, small, check, bad, bathroom, day, price, asked
+
+Topic  9
+resort, beach, food, cana, punta, people, vacation, beautiful, pool, fun, went, best, water, got, entertainment
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.3, and num_topics of 10
+------------------------------------
+
+Topic  0
+florence, helpful, paris, friendly, wonderful, comfortable, perfect, excellent, place, small, recommend, loved, new, city, quiet
+
+Topic  1
+amsterdam, sydney, canal, helpful, harbour, excellent, friendly, distance, walking, recommend, lovely, view, close, located, central
+
+Topic  2
+resort, beach, food, pool, people, day, water, like, got, beautiful, vacation, went, cana, punta, really
+
+Topic  3
+hong, kong, waikiki, view, parking, harbour, mall, views, westin, executive, beach, shopping, floor, free, hilton
+
+Topic  4
+ramblas, barcelona, excellent, fruit, las, eggs, coffee, fresh, tea, friendly, cereal, cereals, helpful, juice, cheese
+
+Topic  5
+desk, bed, small, like, floor, bathroom, place, day, check, got, told, booked, really, price, hotels
+
+Topic  6
+fantastic, excellent, wonderful, best, lovely, view, friendly, amazing, suite, beautiful, perfect, loved, really, pool, experience
+
+Topic  7
+beach, juan, resort, san, pool, food, beautiful, wonderful, ocean, loved, puerto, best, bali, old, place
+
+Topic  8
+walk, station, city, bus, metro, helpful, street, excellent, airport, friendly, free, minutes, area, small, barcelona
+
+Topic  9
+excellent, value, station, price, business, comfortable, small, city, tokyo, walk, bathroom, berlin, area, quite, really
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.3, and num_topics of 10
+------------------------------------
+
+Topic  0
+station, walk, minutes, located, city, 10, helpful, close, away, friendly, excellent, small, recommend, area, nights
+
+Topic  1
+airport, booked, arrived, day, took, way, check, problem, got, hotels, trip, free, city, make, morning
+
+Topic  2
+comfortable, bed, beds, large, quite, bathroom, small, price, nights, friendly, bit, helpful, really, shower, overall
+
+Topic  3
+view, money, worth, floor, city, area, hotels, pool, really, price, bar, fantastic, small, excellent, nights
+
+Topic  4
+wonderful, perfect, loved, fantastic, helpful, friendly, recommend, city, best, beautiful, lovely, place, definitely, comfortable, trip
+
+Topic  5
+excellent, coffee, lovely, helpful, friendly, free, area, walking, small, quiet, recommend, bar, nights, comfortable, restaurant
+
+Topic  6
+beach, resort, food, pool, day, people, beautiful, water, like, went, got, restaurants, buffet, really, bar
+
+Topic  7
+desk, check, door, floor, shower, bed, new, bathroom, day, got, morning, arrived, like, lobby, place
+
+Topic  8
+street, old, small, right, price, quiet, area, little, place, bathroom, walk, friendly, like, close, helpful
+
+Topic  9
+place, bad, like, really, people, say, best, reviews, food, going, better, hotels, experience, want, make
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.001, max_df of 0.2, and num_topics of 10
+------------------------------------
+
+Topic  0
+orleans, quarter, french, bourbon, armes, gras, mardi, new, homewood, nola, milano, iberville, cutter, suites, festival
+
+Topic  1
+boston, seattle, downtown, pike, needle, lenox, market, jury, andra, monorail, parking, charlesmark, newbury, charles, copley
+
+Topic  2
+station, amsterdam, barcelona, city, metro, train, value, ramblas, modern, euros, bus, quiet, nights, minutes, comfortable
+
+Topic  3
+resort, beach, beautiful, vacation, water, cana, punta, went, buffet, trip, bar, fun, restaurants, drinks, kids
+
+Topic  4
+comfortable, city, fantastic, view, square, london, free, bed, new, nights, value, loved, floor, wonderful, definitely
+
+Topic  5
+florence, wonderful, perfect, loved, duomo, highly, lovely, italy, comfortable, fantastic, beautiful, family, trip, nights, venice
+
+Topic  6
+desk, bed, floor, check, view, price, hotels, booked, better, old, street, told, shower, door, nights
+
+Topic  7
+hong, kong, kowloon, mtr, nathan, langham, mongkok, wan, 04, island, concert, lap, ready, mex, switches
+
+Topic  8
+paris, metro, eiffel, tower, rue, champs, arc, louvre, dame, notre, elysees, perfect, lovely, triomphe, wonderful
+
+Topic  9
+scottsdale, rosa, stellar, conceirge, sha, tsim, gay, rodeo, alongside, noting, dissappointed, done, okay, deserted, barely
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.01, max_df of 0.2, and num_topics of 10
+------------------------------------
+
+Topic  0
+florence, wonderful, loved, perfect, duomo, italy, comfortable, family, nights, lovely, highly, fantastic, beautiful, charming, definitely
+
+Topic  1
+told, manager, desk, said, called, card, check, credit, reservation, rude, phone, asked, customer, charged, arrived
+
+Topic  2
+bed, floor, desk, shower, price, noise, door, view, check, hotels, street, better, lobby, booked, bit
+
+Topic  3
+resort, beach, beautiful, water, vacation, went, cana, punta, bar, trip, restaurants, buffet, kids, fun, drinks
+
+Topic  4
+parking, seattle, orleans, waikiki, quarter, new, street, downtown, french, inn, price, comfortable, car, suites, marriott
+
+Topic  5
+bali, hong, kong, fantastic, view, honeymoon, club, wonderful, spa, amazing, beautiful, views, singapore, perfect, loved
+
+Topic  6
+station, city, metro, comfortable, value, barcelona, street, modern, nights, located, close, bus, quiet, minutes, walking
+
+Topic  7
+paris, york, new, comfortable, wonderful, lovely, nyc, fantastic, view, london, reviews, trip, booked, perfect, hotels
+
+Topic  8
+san, francisco, juan, union, car, cable, square, wharf, boston, inn, free, old, comfortable, parking, city
+
+Topic  9
+terrible, star, dirty, bad, overpriced, horrible, awful, worst, avoid, better, poor, disappointing, musty, rude, rated
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN WITH VALUES: min_df of 0.1, max_df of 0.2, and num_topics of 10
+------------------------------------
+
+Topic  0
+sure, make, coffee, big, price, hotels, booked, bed, reviews, comfortable, street, city, want, way, nights
+
+Topic  1
+check, airport, desk, arrived, took, use, minutes, way, morning, booked, went, need, restaurant, problem, hotels
+
+Topic  2
+beach, resort, beautiful, water, went, restaurants, week, buffet, trip, bar, say, make, restaurant, want, days
+
+Topic  3
+bed, shower, old, floor, nights, large, comfortable, quite, water, bit, street, booked, overall, view, need
+
+Topic  4
+fantastic, door, bar, floor, view, city, nights, restaurant, lovely, went, bed, comfortable, right, booked, away
+
+Topic  5
+station, minutes, located, close, 10, city, away, street, nights, quite, walking, right, free, comfortable, booked
+
+Topic  6
+loved, new, times, bit, trip, comfortable, wonderful, beautiful, city, definitely, hotels, staying, lovely, nights, bed
+
+Topic  7
+money, view, better, worth, hotels, experience, price, staying, bad, think, overall, want, nights, right, lot
+
+Topic  8
+perfect, wonderful, lovely, city, quiet, walking, comfortable, street, restaurants, definitely, nights, close, away, trip, restaurant
+
+Topic  9
+beds, free, lobby, price, comfortable, street, desk, coffee, days, floor, morning, large, bed, nights, bar
