@@ -49,6 +49,8 @@ class NLPPipeline():
 		self.topics_words = calc_topics_words(num_top_words)
 
 	def calc_entropy(self, text):
+		''' Many other equivalent ways to calculate entropy. This seems to be the fastest. 5 x faster than scipy's entropy method.'''
+
 		word_counts = defaultdict(int)
 		text_size = float(len(text))
 
@@ -94,6 +96,17 @@ class NLPPipeline():
 		return sentiment_features
 
 	def update_features(self, features_dic):
+		"""
+		From a dictionary containing parameter labels and values used for building features (currently just LDA),
+		updates feature matrices by re-calculating features for each text. 
+		
+		Arguments
+		features_dic (dictionary): A dictionary with string parameter names as keys and ints/floats as values. 
+
+		Example: 
+		features_dic = {'n_components': 10, 'n_words': 10}
+		"""
+
 		def calc_features(text):
 			words = self.tokenizer(text)
 			entropy = self.calc_entropy(words)
@@ -109,21 +122,53 @@ class NLPPipeline():
 		self.X_test = np.hstack((self.tfidf_test, np.array([np.array(calc_features(text)) for text in self.text_test])))
 
 	def grid_search(self, step_grids):
-		def get_step_dics(grid):
-			param_names = list(grid.keys())
-			param_val_combos = list(product(*list(grid.values())))
-			num_params = len(param_names)
-			step_dics = [{param_names[j]: param_val_combo[j] for j in range(num_params)} for param_val_combo in param_val_combos]
+		"""
+		From a nested dictionary containing grids for each pipeline step, fit and score each possible pipeline
+		permutation (nested permutation of the step permutations).
+		
+		Arguments
+		step_grids: A nested dictionary containing the step grid for each step. 
+					Example: step_grids = {'tfidf' = {'min_df': [0.1]},
+			   							   'features' = {'n_components': [10], num_top_words: [10]},
+			   							   'model' = {'type': ['rfc']} }
 
-			return step_dics
+		Returns
+		pipeline_scores: A sorted list of 2-tuples containing the pipeline dictionary and score of each pipeline permutation. 
+		"""
+
+		def get_step_perms(grid):
+			"""
+			From grid (dict) mapping each parameter name to a list of values for that parameter,
+			returns the list of all permutations (dicts) that can be made by choosing a different value
+			for each parameter from its values list.
+			
+			Arguments 
+			grid ({string: list}): A dictionary mapping parameter names to a list of parameter values. 
+								   Example: grid = {'min_df': [0.1], 'max_df': [0.8, 0.9]}
+
+			Returns 
+			step_perms ([dict]): A list of all dictionary permutations for the step that can be made 
+								 by choosing different parameter values from each parameter's domain. 
+
+								 Example: For the above grid example, we'd have
+								 step_perms = [{'min_df': 0.1, 'max_df: 0.8'}, {'min_df: 0.1', max_df: 0.9}]
+
+			"""
+
+			param_names = list(grid.keys())
+			param_val_perms = list(product(*list(grid.values())))
+			num_params = len(param_names)
+			step_perms = [{param_names[j]: param_val_perm[j] for j in range(num_params)} for param_val_perm in param_val_perms]
+
+			return step_perms
 
 		steps = list(step_grids.keys())
 		num_steps = len(steps)
 		grids = list(step_grids.values())
-		step_dics = list(map(get_step_dics, grids))
-		pipeline_combos = list(product(*step_dics))
-		pipeline_dics = [{steps[i]: pipeline_combo[i] for i in range(num_steps)} for pipeline_combo in pipeline_combos]
-		pipeline_scores = [[pipeline_dic, self.score(pipeline_dic)] for pipeline_dic in pipeline_dics]
+		step_perms = list(map(get_step_perms, grids))
+		pipeline_perms = list(product(*step_perms))
+		pipeline_perms = [{steps[i]: pipeline_perm[i] for i in range(num_steps)} for pipeline_perm in pipeline_perms]
+		pipeline_scores = [[pipeline_perm, round(self.score(pipeline_perm), 3)] for pipeline_perm in pipeline_perms]
 		pipeline_scores.sort(key=lambda x: x[1], reverse=True)
 
 		return pipeline_scores
@@ -146,7 +191,7 @@ class NLPPipeline():
 		self.model.fit(self.X_train, self.Y_train)
 		Y_pred = self.model.predict(self.X_test)
 		score = accuracy(Y_pred, self.Y_test)
-		print(f"Params = {pipeline_dic}, score = {score}. \n")
+		print(f"Params = {pipeline_dic}, score = {round(score, 3)}. \n")
 
 		return score
 
