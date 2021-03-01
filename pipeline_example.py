@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 reviews_df = pd.read_csv('tripadvisor_hotel_reviews.csv')
-downsample = 0.01
+downsample = 0.5
 sample_size = int(len(reviews_df) * downsample)
 print(f"Sample size: {sample_size}")
 reviews_df = reviews_df.sample(sample_size)
