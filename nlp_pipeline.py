@@ -1,6 +1,7 @@
 from sklearn.tree import DecisionTreeClassifier as dtc 
 from sklearn.ensemble import RandomForestClassifier as rfc
 from sklearn.model_selection import train_test_split as split
+from sklearn.model_selection import cross_val_score as cv_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation as LDA
 from collections import defaultdict
@@ -8,9 +9,12 @@ from textblob import TextBlob
 import numpy as np
 from itertools import product
 from sklearn.metrics import accuracy_score as accuracy
+from lemmatizer import Lemmatizer
+
 
 class NLPPipeline():
 	def __init__(self, text, Y, train_size=.85):
+        text = text.apply(lambda review: review.replace(',', '.'))  # added this
 		self.model_builders = {'dtc': dtc, 'rfc': rfc}
 		steps = ['tfidf', 'feature_engineering', 'lda', 'model']
 		self.pipeline_dic = {step: None for step in steps}
@@ -22,11 +26,12 @@ class NLPPipeline():
 		self.train_size = train_size
 
 	def update_tfidf(self, tfidf_dic):
+        tfidf_dic['tokenizer'] = Lemmatizer() #added this line
 		self.pipeline_dic['tfidf'] = tfidf_dic
-		self.tfidf = TfidfVectorizer(**tfidf_dic)
+		self.tfidf = TfidfVectorizer(**tfidf_dic) #implement tokenizer/lemmatizer here?
 		self.tfidf_train = self.tfidf.fit_transform(self.text_train) 
 		self.tfidf_train = self.tfidf_train.toarray()
-		self.tokenizer = self.tfidf.build_tokenizer()
+		#self.tokenizer = self.tfidf.build_tokenizer()
 		self.tfidf_test = self.tfidf.transform(self.text_test)
 		self.tfidf_test = self.tfidf_test.toarray()
 		self.feature_names = self.tfidf.get_feature_names()
@@ -76,7 +81,7 @@ class NLPPipeline():
 		min_polarity, max_polarity = -.1, .1
 		blob = TextBlob(text)
 		polarities = [sentence.sentiment.polarity for sentence in blob.sentences]
-		polarities = [round(polarity, 2) for polarity in polarities]
+		polarities = [round(polarity, 1) for polarity in polarities]
 		polarity_entropy = self.calc_entropy(polarities)
 		polarity_var = np.var(polarities)
 		num_pos_sents = len([polarity for polarity in polarities if polarity > max_polarity])
@@ -189,8 +194,9 @@ class NLPPipeline():
 		model_dic = {key: value for key, value in pipeline_dic['model'].items() if key != 'type'}
 		self.model = self.model_builder(**model_dic)
 		self.model.fit(self.X_train, self.Y_train)
-		Y_pred = self.model.predict(self.X_test)
-		score = accuracy(Y_pred, self.Y_test)
+		#Y_pred = self.model.predict(self.X_test)
+		#score = accuracy(Y_pred, self.Y_test)
+        score = np.mean(cv_score(self.model, X_test, Y_test, cv=5, scoring = 'accuracy'))
 		print(f"Params = {pipeline_dic}, score = {round(score, 3)}. \n")
 
 		return score
