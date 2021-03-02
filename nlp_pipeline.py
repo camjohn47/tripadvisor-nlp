@@ -195,7 +195,7 @@ class NLPPipeline():
 		self.model = self.model_builder(**model_dic)
 		self.model.fit(self.X_train, self.Y_train)
 		#Y_pred = self.model.predict(self.X_test)
-		#score = accuracy(Y_pred, self.Y_test)
+		#score = accuracy(Y_pred, self.Y_test)        
         score = np.mean(cv_score(self.model, X_test, Y_test, cv=5, scoring = 'accuracy'))
 		print(f"Params = {pipeline_dic}, score = {round(score, 3)}. \n")
 
